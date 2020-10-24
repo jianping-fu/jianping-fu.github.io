@@ -1,11 +1,7 @@
 # 我讲授的课程
 
-## 线性代数
-本课程注重几何直观。
+## 随机微分方程
 
-## 高等数学
-* 上册
-* 下册
-
-## 概率论与数理统计
-参考教材：
+参考教材
+* Brownian Motion and Stochastic Calculus, by Ioannis Karatzas and Steven Shreve
+* Stochastic Differential Equations, by Bernt Øksendal
