@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>链上文献 · 区块链与加密资产研究</title>
-  <meta name="description" content="在19本指定顶级期刊中探索区块链与加密资产研究。161篇主目录文献、13个主题，支持搜索、筛选、收藏和引用导出。目录快照：2026年10月27日。">
+  <meta name="description" content="在19本指定顶级期刊中探索区块链与加密资产研究。166篇主目录文献、13个主题，支持搜索、筛选、收藏和引用导出。目录快照：2026年10月27日。">
   <meta name="theme-color" content="#254d43">
   <link rel="canonical" href="https://jianping-fu.github.io/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/style.css">
-  <script src="./assets/app.js" defer></script>
+  <script src="./assets/app.js?v=20261027-v2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -54,24 +54,24 @@
         </svg>
         <span class="visual-caption">A CONNECTED FIELD OF IDEAS</span>
       </div>
-      <div class="snapshot">目录快照 <span>2026.10.27</span><i></i> 公开记录核验版</div>
+      <div class="snapshot">目录快照 <span data-catalogue-date="dots">2026.10.27</span><i></i> 公开记录核验版</div>
     </section>
     <section class="stats" aria-label="文献库概况">
-      <div><span class="stat-number">161<small>篇</small></span><span>主目录文献</span></div>
-      <div><span class="stat-number">19<small>本</small></span><span>指定学术期刊</span></div>
-      <div><span class="stat-number">13<small>个</small></span><span>研究主题</span></div>
-      <div><span class="stat-number">7<small>篇</small></span><span>边界相关文献 · 单列</span></div>
+      <div><span class="stat-number"><span data-catalogue-count="main">166</span><small>篇</small></span><span>主目录文献</span></div>
+      <div><span class="stat-number"><span data-catalogue-count="journals">19</span><small>本</small></span><span>指定学术期刊</span></div>
+      <div><span class="stat-number"><span data-catalogue-count="themes">13</span><small>个</small></span><span>研究主题</span></div>
+      <div><span class="stat-number"><span data-catalogue-count="related">7</span><small>篇</small></span><span>边界相关文献 · 单列</span></div>
     </section>
     <section id="catalogue" class="catalogue-area">
       <div id="library-view" class="library-layout">
         <aside class="topic-sidebar" aria-label="主题筛选">
-          <div class="sidebar-heading"><svg class="icon"><use href="#i-grid"/></svg> 研究主题 <span>13</span></div>
+          <div class="sidebar-heading"><svg class="icon"><use href="#i-grid"/></svg> 研究主题 <span data-catalogue-count="themes">13</span></div>
           <div id="topic-list"></div>
           <div class="sidebar-note"><span class="note-mark">i</span><p>各主题内默认从旧到新排列。<br><a href="#view=about">了解收录与排序口径 <span>↗</span></a></p></div>
           <div class="sidebar-download"><svg class="icon"><use href="#i-book"/></svg><strong>让阅读继续</strong><p>下载完整题录，加入你的研究工作流。</p><a href="./downloads/catalogue.xlsx" download="区块链与加密资产文献目录.xlsx">下载 Excel <svg class="icon"><use href="#i-download"/></svg></a></div>
         </aside>
         <div class="library-content">
-          <div class="content-title"><div><div class="section-label" id="section-label">THE LITERATURE COLLECTION</div><h2 id="list-title">全部文献<span id="title-count">161</span></h2></div><button id="export-open" class="button button-outline"><svg class="icon"><use href="#i-download"/></svg> 导出题录</button></div>
+          <div class="content-title"><div><div class="section-label" id="section-label">THE LITERATURE COLLECTION</div><h2 id="list-title">全部文献<span id="title-count">166</span></h2></div><button id="export-open" class="button button-outline"><svg class="icon"><use href="#i-download"/></svg> 导出题录</button></div>
           <div class="search-box"><svg class="icon"><use href="#i-search"/></svg><input id="search" type="search" autocomplete="off" placeholder="搜索标题、作者、关键词或 DOI…" aria-label="搜索文献"><kbd>/</kbd></div>
           <div class="filters">
             <label class="select-wrap"><span class="sr-only">期刊</span><select id="journal-filter" aria-label="期刊"><option value="">全部期刊</option></select></label>
@@ -79,12 +79,12 @@
             <label class="select-wrap"><span class="sr-only">发表状态</span><select id="status-filter" aria-label="发表状态"><option value="">全部状态</option><option>卷期发表</option><option>在线发表</option><option>已接收</option></select></label>
             <button class="reset-button" id="reset" title="清除全部筛选"><svg class="icon"><use href="#i-filter"/></svg> 重置</button>
           </div>
-          <div class="list-toolbar"><div class="scope-tabs" role="group" aria-label="收录范围"><button id="scope-main" class="active" data-scope="main">主目录 <span>161</span></button><button id="scope-related" data-scope="related">边界相关 <span>7</span></button></div><label class="sort-select"><span class="sr-only">排序方式</span><select id="sort" aria-label="排序方式"><option value="theme">主题 · 从旧到新</option><option value="old">时间 · 从旧到新</option><option value="new">时间 · 从新到旧</option><option value="title">题名 · A → Z</option></select></label></div>
+          <div class="list-toolbar"><div class="scope-tabs" role="group" aria-label="收录范围"><button id="scope-main" class="active" data-scope="main">主目录 <span data-catalogue-count="main">166</span></button><button id="scope-related" data-scope="related">边界相关 <span data-catalogue-count="related">7</span></button></div><label class="sort-select"><span class="sr-only">排序方式</span><select id="sort" aria-label="排序方式"><option value="theme">主题 · 从旧到新</option><option value="old">时间 · 从旧到新</option><option value="new">时间 · 从新到旧</option><option value="title">题名 · A → Z</option></select></label></div>
           <div id="active-filters" class="active-filters"></div>
           <div id="result-summary" class="result-summary" aria-live="polite"></div>
           <div id="paper-list" class="paper-list"><div class="loading-state">正在载入文献目录…</div></div>
           <div id="pagination" class="pagination" aria-label="文献分页"></div>
-          <p class="collection-note">题录与研究焦点用于发现文献，不能替代全文审读。发表状态以 2026 年 10 月 27 日为界。</p>
+          <p class="collection-note">题录与研究焦点用于发现文献，不能替代全文审读。发表状态以 <time data-catalogue-date="readable" datetime="2026-10-27">2026 年 10 月 27 日</time>为界。</p>
         </div>
       </div>
       <section id="map-view" class="alternate-view" hidden></section>
@@ -92,9 +92,9 @@
       <section id="about-view" class="alternate-view" hidden></section>
     </section>
   </main>
-  <footer class="site-footer"><div><a class="footer-brand" href="#view=library">链上文献 <span>CHAINLIT</span></a><p>让研究有迹可循。</p></div><div>基于「梳理顶刊区块链论文」目录<br><span>公开记录核验 · 截至 2026.10.27</span></div><a href="#view=about">收录范围与来源 <svg class="icon"><use href="#i-arrow"/></svg></a></footer>
+  <footer class="site-footer"><div><a class="footer-brand" href="#view=library">链上文献 <span>CHAINLIT</span></a><p>让研究有迹可循。</p></div><div>基于「梳理顶刊区块链论文」目录<br><span>公开记录核验 · 截至 <span data-catalogue-date="dots">2026.10.27</span></span></div><a href="#view=about">收录范围与来源 <svg class="icon"><use href="#i-arrow"/></svg></a></footer>
   <dialog id="paper-dialog" aria-labelledby="detail-title"><div id="paper-detail"></div></dialog>
-  <dialog id="export-dialog" class="export-dialog" aria-labelledby="export-title"><div class="dialog-top"><span class="section-label">TAKE YOUR RESEARCH FURTHER</span><button class="icon-button" data-close="export-dialog" aria-label="关闭导出窗口"><svg class="icon"><use href="#i-close"/></svg></button></div><h2 id="export-title">带走你的研究线索</h2><p id="export-description"></p><div class="export-options"><button data-export="csv"><strong>CSV 表格 <span>↗</span></strong><small>当前筛选结果，适合继续整理</small></button><button data-export="bib"><strong>BibTeX 引用 <span>↗</span></strong><small>当前筛选结果，适合文献管理</small></button><a href="./downloads/catalogue.xlsx" download="区块链与加密资产文献目录.xlsx"><strong>完整 Excel 目录 <span>↗</span></strong><small>原始交付 · 161 篇主目录 + 7 篇边界文献</small></a><a href="./downloads/catalogue.bib" download><strong>完整 BibTeX <span>↗</span></strong><small>原始交付 · 全部 168 条题录</small></a><a href="./downloads/catalogue.md" download><strong>完整阅读版 <span>↗</span></strong><small>Markdown · 逐篇目录、核验与排除说明</small></a></div></dialog>
+  <dialog id="export-dialog" class="export-dialog" aria-labelledby="export-title"><div class="dialog-top"><span class="section-label">TAKE YOUR RESEARCH FURTHER</span><button class="icon-button" data-close="export-dialog" aria-label="关闭导出窗口"><svg class="icon"><use href="#i-close"/></svg></button></div><h2 id="export-title">带走你的研究线索</h2><p id="export-description"></p><div class="export-options"><button data-export="csv"><strong>CSV 表格 <span>↗</span></strong><small>当前筛选结果，适合继续整理</small></button><button data-export="bib"><strong>BibTeX 引用 <span>↗</span></strong><small>当前筛选结果，适合文献管理</small></button><a href="./downloads/catalogue.xlsx" download="区块链与加密资产文献目录.xlsx"><strong>完整 Excel 目录 <span>↗</span></strong><small>原始交付 · <span data-catalogue-count="main">166</span> 篇主目录 + <span data-catalogue-count="related">7</span> 篇边界文献</small></a><a href="./downloads/catalogue.bib" download><strong>完整 BibTeX <span>↗</span></strong><small>原始交付 · 全部 <span data-catalogue-count="total">173</span> 条题录</small></a><a href="./downloads/catalogue.md" download><strong>完整阅读版 <span>↗</span></strong><small>Markdown · 逐篇目录、核验与排除说明</small></a><a href="./downloads/revisions.md" download><strong>目录更新记录 <span>↗</span></strong><small>逐篇补漏说明与收录依据</small></a></div></dialog>
   <div id="toast" role="status" class="toast" hidden></div>
   <noscript><p class="noscript-message">请启用 JavaScript 使用搜索与筛选。你也可以直接<a href="./downloads/catalogue.md">下载完整阅读版目录</a>。</p></noscript>
 </body>

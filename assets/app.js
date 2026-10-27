@@ -12,6 +12,21 @@
   const shortThemes = {1:'货币竞争、估值与收益',2:'ICO、代币融资与平台',3:'共识、挖矿与网络安全',4:'交易费用、支付与扩容',5:'市场、衍生品与投资者',6:'DEX、自动做市与流动性',7:'稳定币、DeFi 借贷与预测',8:'智能合约、DAO 与治理',9:'信息披露、会计与审计',10:'操纵、非法活动与税收',11:'供应链、企业应用与包容',12:'NFT、艺术品与创作者',13:'综述与研究议程'};
   let data, records = [], saved = new Set(), state = {...defaults}, filtered = [], toastTimer, searchTimer, detailId;
 
+  function readableCutoff() {
+    const [year,month,day] = data.cutoff.split('-').map(Number);
+    return `${year} 年 ${month} 月 ${day} 日`;
+  }
+
+  function syncCatalogueSummary() {
+    const counts = {main:data.main_count,related:data.related_count,total:records.length,journals:Object.keys(data.journals).length,themes:Object.keys(data.themes).length};
+    $$('[data-catalogue-count]').forEach(node => { node.textContent = counts[node.dataset.catalogueCount]; });
+    $$('[data-catalogue-date]').forEach(node => {
+      node.textContent = node.dataset.catalogueDate === 'dots' ? data.cutoff.replace(/-/g,'.') : readableCutoff();
+      if (node.tagName === 'TIME') node.dateTime = data.cutoff;
+    });
+    $('meta[name="description"]').content = `在${counts.journals}本指定顶级期刊中探索区块链与加密资产研究。${counts.main}篇主目录文献、${counts.themes}个主题，支持搜索、筛选、收藏和引用导出。目录快照：${readableCutoff()}。`;
+  }
+
   function readState() {
     const params = new URLSearchParams(location.hash.slice(1));
     const s = {...defaults};
@@ -142,12 +157,12 @@
     const yearCounts = years.map(y => main.filter(r => r.year === y).length);
     const maxYear = Math.max(...yearCounts);
     const disciplines = [...new Set(Object.values(data.journals).map(j => j[2]))];
-    $('#map-view').innerHTML = `<div class="content-title"><div><div class="section-label">A MAP OF THE RESEARCH</div><h2>从一个问题，走向一片研究</h2></div>${icon('grid')}</div><p class="view-intro">13 个主题，161 篇主目录文献。沿着主题、年份与学科，发现研究之间的联系。点击图表中的主题或年份，即可进入对应目录。</p><div class="map-layout"><section class="panel"><h3>研究主题分布</h3>${Object.entries(data.themes).map(([id,name]) => `<button class="theme-bar" data-explore-theme="${id}" aria-label="浏览${esc(name)}，${counts[id]}篇"><span class="bar-label"><span>${esc(name)}</span><b>${counts[id]}</b></span><span class="bar-track"><span class="bar-fill" style="width:${counts[id]/maxTheme*100}%"></span></span></button>`).join('')}</section><div class="map-side"><section class="panel"><h3>题录年份分布</h3><div class="year-chart">${years.map((y,i) => `<button class="year-col" data-explore-year="${y}" aria-label="浏览 ${y} 年的 ${yearCounts[i]} 篇文献"><span>${yearCounts[i]}</span><span class="year-column" style="height:${yearCounts[i]/maxYear*125}px"></span><span>${String(y).slice(2)}</span></button>`).join('')}</div><p class="chart-note">2018—2026 年。以卷期年份优先，未编入卷期的采用在线年份；1 篇已接收文献因日期未公开，未纳入年份统计。</p></section><section class="panel"><h3>跨越六个学科</h3><div class="discipline-list">${disciplines.map(d => `<div class="discipline-row"><span>${esc(d)}</span><b>${main.filter(r => r.discipline === d).length} <small style="font:10px var(--sans);color:#9aa78e">篇</small></b></div>`).join('')}</div><div class="status-breakdown">${Object.entries(data.status_counts).map(([s,n]) => `<span><b>${n}</b>${esc(s)}</span>`).join('')}</div></section></div></div>`;
+    $('#map-view').innerHTML = `<div class="content-title"><div><div class="section-label">A MAP OF THE RESEARCH</div><h2>从一个问题，走向一片研究</h2></div>${icon('grid')}</div><p class="view-intro">${Object.keys(data.themes).length} 个主题，${data.main_count} 篇主目录文献。沿着主题、年份与学科，发现研究之间的联系。点击图表中的主题或年份，即可进入对应目录。</p><div class="map-layout"><section class="panel"><h3>研究主题分布</h3>${Object.entries(data.themes).map(([id,name]) => `<button class="theme-bar" data-explore-theme="${id}" aria-label="浏览${esc(name)}，${counts[id]}篇"><span class="bar-label"><span>${esc(name)}</span><b>${counts[id]}</b></span><span class="bar-track"><span class="bar-fill" style="width:${counts[id]/maxTheme*100}%"></span></span></button>`).join('')}</section><div class="map-side"><section class="panel"><h3>题录年份分布</h3><div class="year-chart">${years.map((y,i) => `<button class="year-col" data-explore-year="${y}" aria-label="浏览 ${y} 年的 ${yearCounts[i]} 篇文献"><span>${yearCounts[i]}</span><span class="year-column" style="height:${yearCounts[i]/maxYear*125}px"></span><span>${String(y).slice(2)}</span></button>`).join('')}</div><p class="chart-note">${years[0]}—${years[years.length-1]} 年。以卷期年份优先，未编入卷期的采用在线年份；${main.filter(r => !r.year).length} 篇文献因日期未公开，未纳入年份统计。</p></section><section class="panel"><h3>跨越 ${disciplines.length} 个学科</h3><div class="discipline-list">${disciplines.map(d => `<div class="discipline-row"><span>${esc(d)}</span><b>${main.filter(r => r.discipline === d).length} <small style="font:10px var(--sans);color:#9aa78e">篇</small></b></div>`).join('')}</div><div class="status-breakdown">${Object.entries(data.status_counts).map(([s,n]) => `<span><b>${n}</b>${esc(s)}</span>`).join('')}</div></section></div></div>`;
   }
 
   function renderJournals() {
     const disciplines = [...new Set(Object.values(data.journals).map(j => j[2]))];
-    $('#journals-view').innerHTML = `<div class="content-title"><div><div class="section-label">THE JOURNAL INDEX</div><h2>19 本期刊，六个学术视角</h2></div><a href="#view=about" class="button button-outline" data-nav="about">查看收录口径 ${icon('arrow')}</a></div><p class="view-intro">严格限定原目录指定的 19 本主刊。数量表示本轮核验收录情况；“本轮未检出”不代表该刊绝无相关研究。点击期刊，浏览对应题录。</p>${disciplines.map(d => `<section class="journal-group"><h3>${esc(d)}</h3><div class="journal-grid">${Object.entries(data.journals).filter(([,j]) => j[2] === d).map(([key,j]) => {
+    $('#journals-view').innerHTML = `<div class="content-title"><div><div class="section-label">THE JOURNAL INDEX</div><h2>${Object.keys(data.journals).length} 本期刊，${disciplines.length} 个学术视角</h2></div><a href="#view=about" class="button button-outline" data-nav="about">查看收录口径 ${icon('arrow')}</a></div><p class="view-intro">严格限定原目录指定的 ${Object.keys(data.journals).length} 本主刊。数量表示本轮核验收录情况；“本轮未检出”不代表该刊绝无相关研究。点击期刊，浏览对应题录。</p>${disciplines.map(d => `<section class="journal-group"><h3>${esc(d)}</h3><div class="journal-grid">${Object.entries(data.journals).filter(([,j]) => j[2] === d).map(([key,j]) => {
       const n = records.filter(r => r.journal === key && r.main).length;
       const related = records.filter(r => r.journal === key && !r.main).length;
       const clickable = n + related > 0;
@@ -157,7 +172,7 @@
   }
 
   function renderAbout() {
-    $('#about-view').innerHTML = `<div class="content-title"><div><div class="section-label">SCOPE, SOURCES & METHODOLOGY</div><h2>每一条题录，都有来处</h2></div></div><p class="view-intro">本站将「梳理顶刊区块链论文」的原始交付整理为可检索的研究目录。内容是截至 2026 年 10 月 27 日的固定快照，后续发表状态可能变化。</p><div class="about-grid"><div class="about-main">${data.method.map((text,i) => `<div class="method-item"><span class="method-number">${String(i+1).padStart(2,'0')}</span><p>${esc(text)}</p></div>`).join('')}<div class="provenance"><strong>网站整理说明</strong><p>论文标题、作者、期刊、日期、研究焦点、核验说明与来源链接均沿用原始目录。网站未对全部论文重新检索或进行全文审读；原始 Excel、阅读版及 BibTeX 可下载核对。</p><p>收藏保存在当前设备的浏览器中，不会跨设备同步。清除浏览器数据可能移除收藏，建议导出收藏题录备份。</p><p><a href="./downloads/catalogue.md" download>下载原始阅读版与逐篇核验说明 ↗</a></p></div></div><aside class="panel about-aside"><h3>本次目录的边界</h3><p>161 篇主目录<br>7 篇边界相关文献，单独展示<br>19 本指定期刊主刊</p><p>卷期发表 138 篇<br>在线发表 22 篇<br>已接收 1 篇</p><p>AER 与 AER: Insights 分别处理。仅有 R&R、工作论文或期刊模板，不视为期刊接收。</p><p>“已接收”的 P082 来自作者公开声明，接收日期未公开。请在题录详情中查看具体证据。</p><a href="./downloads/catalogue.xlsx" download class="button button-outline">完整 Excel ${icon('download')}</a><a href="./downloads/catalogue.bib" download class="button button-outline">完整 BibTeX ${icon('download')}</a></aside></div>`;
+    $('#about-view').innerHTML = `<div class="content-title"><div><div class="section-label">SCOPE, SOURCES & METHODOLOGY</div><h2>每一条题录，都有来处</h2></div></div><p class="view-intro">本站将「梳理顶刊区块链论文」的原始交付整理为可检索的研究目录。内容是截至 ${readableCutoff()} 的固定快照，后续发表状态可能变化。</p><div class="about-grid"><div class="about-main">${data.method.map((text,i) => `<div class="method-item"><span class="method-number">${String(i+1).padStart(2,'0')}</span><p>${esc(text)}</p></div>`).join('')}<div class="provenance"><strong>网站整理说明</strong><p>论文标题、作者、期刊、日期、研究焦点、核验说明与来源链接均沿用原始目录。网站未对全部论文重新检索或进行全文审读；原始 Excel、阅读版及 BibTeX 可下载核对。</p><p>收藏保存在当前设备的浏览器中，不会跨设备同步。清除浏览器数据可能移除收藏，建议导出收藏题录备份。</p><p><a href="./downloads/catalogue.md" download>下载原始阅读版与逐篇核验说明 ↗</a></p><p><a href="./downloads/revisions.md" download>查看目录补漏与修订记录 ↗</a></p></div></div><aside class="panel about-aside"><h3>本次目录的边界</h3><p>${data.main_count} 篇主目录<br>${data.related_count} 篇边界相关文献，单独展示<br>${Object.keys(data.journals).length} 本指定期刊主刊</p><p>${Object.entries(data.status_counts).map(([label,n]) => `${esc(label)} ${n} 篇`).join('<br>')}</p><p>AER 与 AER: Insights 分别处理。仅有 R&R、工作论文或期刊模板，不视为期刊接收。</p><p>已接收条目的接收日期及证据层级，以各篇题录详情为准；日期未公开者不归入年份统计。</p><a href="./downloads/catalogue.xlsx" download class="button button-outline">完整 Excel ${icon('download')}</a><a href="./downloads/catalogue.bib" download class="button button-outline">完整 BibTeX ${icon('download')}</a></aside></div>`;
   }
 
   function render() {
@@ -222,7 +237,7 @@
   function bibtex(list) {
     const latex = s => String(s ?? '').replace(/\\/g,'\\textbackslash{}').replace(/[&%_$#]/g,c => `\\${c}`);
     return list.map(r => {
-      const fields = {title:r.title,author:r.authors.join(' and '),journal:r.journal_full,...(r.year ? {year:r.year} : {}),...(r.volume ? {volume:r.volume} : {}),...(r.issue ? {number:r.issue} : {}),...(r.pages ? {pages:r.pages.replace(/-/g,'--')} : {}),...(r.doi ? {doi:r.doi} : {}),url:r.source_url,note:r.status === '已接收' ? 'Accepted; acceptance date not publicly available. Verified 2026-10-27.' : `${r.status}; catalogue verified 2026-10-27`};
+      const fields = {title:r.title,author:r.authors.join(' and '),journal:r.journal_full,...(r.year ? {year:r.year} : {}),...(r.volume ? {volume:r.volume} : {}),...(r.issue ? {number:r.issue} : {}),...(r.pages ? {pages:r.pages.replace(/-/g,'--')} : {}),...(r.doi ? {doi:r.doi} : {}),url:r.source_url,note:r.status === '已接收' ? `Accepted; acceptance date not publicly available. Verified ${data.cutoff}.` : `${r.status}; catalogue verified ${data.cutoff}`};
       return `@${r.doi ? 'article' : 'unpublished'}{chainlit${r.id},\n${Object.entries(fields).map(([k,v]) => `  ${k} = {${latex(v)}}`).join(',\n')}\n}`;
     }).join('\n\n');
   }
@@ -278,9 +293,10 @@
 
   async function init() {
     try {
-      const response = await fetch('./assets/catalogue.json'); if (!response.ok) throw new Error('Catalogue unavailable');
+      const response = await fetch('./assets/catalogue.json',{cache:'no-cache'}); if (!response.ok) throw new Error('Catalogue unavailable');
       data = await response.json();
       records = data.records.map(r => ({...r,_search:[r.title,r.authors.join(' '),r.doi,r.focus,r.theme,r.journal,r.journal_full,r.discipline].join(' ').toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'')}));
+      syncCatalogueSummary();
       try { const values = JSON.parse(localStorage.getItem(storageKey) || '[]'); saved = new Set(Array.isArray(values) ? values.filter(id => records.some(r => r.id === id)) : []); } catch { saved = new Set(); }
       $('#journal-filter').innerHTML += Object.entries(data.journals).map(([key,j]) => `<option value="${esc(key)}">${esc(key)} · ${esc(j[2])}</option>`).join('');
       $('#year-filter').innerHTML += [...new Set(records.map(r => r.year).filter(Boolean))].sort((a,b) => b-a).map(y => `<option value="${y}">${y} 年</option>`).join('')+'<option value="unknown">日期未公开</option>';

@@ -1,8 +1,10 @@
 # 区块链与加密数字资产文献目录
 
-截至 **2026-10-27**。覆盖指定 19 刊。主目录 **161 篇**，另列边界相关文献 **7 篇**。
+截至 **2026-10-27**，v2 补漏修订版。覆盖指定 19 刊。主目录 **166 篇**，另列边界相关文献 **7 篇**。
 
-主目录状态：卷期发表 138 篇、在线发表 22 篇、已接收 1 篇。
+主目录状态：卷期发表 142 篇、在线发表 22 篇、已接收 2 篇。
+
+本次补入 5 篇，新增编号 P162–P166，原有编号保留。补入条目已经插回相应主题的时间顺序；详见同目录《补漏核查与修订记录_v2.md》。
 
 ## 收录和排序口径
 
@@ -13,26 +15,27 @@
 5. 已编入卷期的论文按正式卷期年份及年月排序；尚未编入卷期的按期刊首次在线日期排序。同月按可得在线日期、题名排列。接收日期未公开的已接收论文放在所属主题末尾，不能据此判断其真实接收先后。
 6. 在线发表与已接收分别标注。SSRN/NBER/arXiv 工作论文、R&R、会议接收、受邀返修和期刊论文模板均不构成期刊接收证据。仅有作者声明的已接收记录明确注明证据层级。
 7. 筛查 Crossref 中这 19 刊 2008-01-01 至 2026-10-27 的 35,916 条出版题录（含非论文记录），以广义关键词筛选题名/可得摘要，再用期刊官网、在线目录、作者页和公开研究记录交叉补查。关键词包括 blockchain、bitcoin、crypto、cryptocurrency、token/tokenization/tokenomics、ICO、NFT/non-fungible、stablecoin、DeFi、smart contract、distributed ledger、proof of work/stake、automated market maker、DAO、Uniswap、Ethereum、airdrop、mining 和 consensus 等。
-8. 题录、卷期和日期以出版方记录优先；Crossref 暂缺卷期而官网已有卷期的记录进行人工修正，并保留修正说明。DOI 中的年份不是发表年份。首次在线日期缺失即留空，不用 DOI 注册日期替代。
-9. 每篇只在一个主要主题出现。主题和中文研究焦点根据题名、摘要及可得公开内容归纳，用于定位研究问题，不代替对论文识别策略或结论的全文审读。
-10. 这是公开记录可核验范围内的目录，不保证覆盖尚未公开的接收通知或所有尚未入库的记录。“未检出”不等于断言该刊绝无相关研究。
+8. v2 补漏复核增加 perpetual futures/options、funding rate、Terra/Luna、UST/Tether、链上项目名称等检索词，复筛缺少摘要或题名较泛的候选，并补查作者公开接收声明。另检查原始日期筛选范围之外的 55 条未来卷期/日期记录，防止漏掉已在线但编入未来卷期的论文；这不将未来论文自动纳入。补入 5 篇，保留首版编号；篇目仍按主题内从旧到新排列。
+9. 题录、卷期和日期以出版方记录优先；Crossref 暂缺卷期而官网已有卷期的记录进行人工修正，并保留修正说明。DOI 中的年份不是发表年份。首次在线日期缺失即留空，不用 DOI 注册日期替代。
+10. 每篇只在一个主要主题出现。主题和中文研究焦点根据题名、摘要及可得公开内容归纳，用于定位研究问题，不代替对论文识别策略或结论的全文审读。
+11. 这是公开记录可核验范围内的目录，不保证覆盖尚未公开的接收通知或所有尚未入库的记录。“未检出”不等于断言该刊绝无相关研究。
 
 ## 期刊覆盖
 
 | 学科 | 期刊 | 简称 | 主目录 | 边界相关 |
 |---|---|---|---:|---:|
-| 经济学 | American Economic Review | AER | 0 | 1 |
+| 经济学 | American Economic Review | AER | 1 | 1 |
 | 经济学 | Econometrica | Econometrica | 0 | 0 |
 | 经济学 | The Quarterly Journal of Economics | QJE | 1 | 0 |
 | 经济学 | Journal of Political Economy | JPE | 1 | 0 |
 | 经济学 | The Review of Economic Studies | REStud | 2 | 0 |
 | 经济学 | Journal of Monetary Economics | JME | 6 | 1 |
 | 金融学 | The Review of Financial Studies | RFS | 19 | 0 |
-| 金融学 | Journal of Financial Economics | JFE | 12 | 0 |
+| 金融学 | Journal of Financial Economics | JFE | 13 | 0 |
 | 金融学 | The Journal of Finance | JF | 6 | 0 |
-| 金融数学 | Mathematical Finance | Mathematical Finance | 9 | 0 |
+| 金融数学 | Mathematical Finance | Mathematical Finance | 10 | 0 |
 | 金融数学 | Finance and Stochastics | Finance and Stochastics | 0 | 0 |
-| 金融数学 | SIAM Journal on Financial Mathematics | SIAM JFM | 4 | 0 |
+| 金融数学 | SIAM Journal on Financial Mathematics | SIAM JFM | 6 | 0 |
 | 管理科学 | Management Science | Management Science | 67 | 2 |
 | 管理科学 | Operations Research | Operations Research | 4 | 0 |
 | 信息系统 | Information Systems Research | ISR | 12 | 2 |
@@ -41,7 +44,7 @@
 | 会计学 | Journal of Accounting Research | JAR | 4 | 0 |
 | 会计学 | The Accounting Review | TAR | 1 | 1 |
 
-Econometrica 和 Finance and Stochastics 本次未检出符合主目录口径的可确认文献。AER 有 1 篇一般智能合约理论文献，列在边界相关部分。
+Econometrica 和 Finance and Stochastics 本次未检出符合主目录口径的可确认文献。AER 已补入 1 篇作者主页明确标为 forthcoming 的比特币链上分析论文，另有 1 篇一般智能合约理论文献列在边界相关部分。
 
 Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthcoming 列表](https://people.math.ethz.ch/~finasto/forthcoming/forthcoming.html)。
 
@@ -53,9 +56,9 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | 2. ICO、代币融资与平台经济 | 23 |
 | 3. 共识机制、挖矿与去中心化安全 | 19 |
 | 4. 交易费用、支付与区块链扩容 | 11 |
-| 5. 交易市场、衍生品与投资者行为 | 15 |
+| 5. 交易市场、衍生品与投资者行为 | 19 |
 | 6. 去中心化交易所、自动做市与流动性 | 13 |
-| 7. 稳定币、DeFi 借贷与预测市场 | 7 |
+| 7. 稳定币、DeFi 借贷与预测市场 | 8 |
 | 8. 智能合约、DAO、社区与制度治理 | 18 |
 | 9. 企业披露、财务会计与审计 | 11 |
 | 10. 市场操纵、非法活动、网络犯罪与税收 | 11 |
@@ -157,6 +160,7 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | 编号 | 年份/日期 | 论文与作者 | 期刊及卷期页码 | 状态 | 研究焦点 |
 |---|---|---|---|---|---|
 | P068 | 2020-02 | **[Trading and arbitrage in cryptocurrency markets](https://doi.org/10.1016/j.jfineco.2019.07.001)**<br>Igor Makarov; Antoinette Schoar | JFE 135(2): 293-319 | 卷期发表 | 加密货币跨交易所套利与市场分割 |
+| P162 | 2023-03 | **[Short Communication: A Primer on Perpetuals](https://doi.org/10.1137/22M1520931)**<br>Guillermo Angeris; Tarun Chitra; Alex Evans; Matthew Lorig | SIAM JFM 14(1): SC17-SC30 | 卷期发表 | 加密市场永续合约的资金率、折现率设计与复制；涵盖非线性支付 |
 | P069 | 2023-09 | **[Decrypting new age international capital flows](https://doi.org/10.1016/j.jmoneco.2023.05.015)**<br>Clemens Graf von Luckner; Carmen M. Reinhart; Kenneth Rogoff | JME 138: 104-122 | 卷期发表 | 点对点比特币市场、跨境资金流动与资本管制 |
 | P070 | 2023-10 | **[Crypto quanto and inverse options](https://doi.org/10.1111/mafi.12410)**<br>Carol Alexander; Ding Chen; Arben Imeraj | Mathematical Finance 33(4): 1005-1043 | 卷期发表 | 加密资产 quanto 与反向期权的定价及对冲 |
 | P071 | 2023-11 | **[The Impact of Derivatives on Spot Markets: Evidence from the Introduction of Bitcoin Futures Contracts](https://doi.org/10.1287/mnsc.2023.4900)**<br>Patrick Augustin; Alexey Rubtsov; Donghwa Shin | Management Science 69(11): 6752-6776 | 卷期发表 | 比特币期货推出对现货市场的影响 |
@@ -168,8 +172,11 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | P077 | 2026-05 | **[Social Audience Size as a Reference Point: Evidence from a Field Experiment](https://doi.org/10.1287/mnsc.2022.03144)**<br>Xingchen Xu; Qili Wang; Yizhi Liu; Liangfei Qiu | Management Science 72(5): 4298-4318 | 卷期发表；加密场景 | 加密社交交易平台上的受众规模与交易行为 |
 | P078 | 2026-05-06 | **[Crypto Carry](https://doi.org/10.1287/mnsc.2024.05069)**<br>Maik Schmeling; Andreas Schrimpf; Karamfil Todorov | Management Science （未编入卷期） | 在线发表 | 加密货币期现基差与持有收益 |
 | P079 | 2026-06 | **[The Digital Privacy Paradox and Choice Architecture: Evidence from an Experiment in Fintech](https://doi.org/10.25300/MISQ/2025/19206)**<br>Susan Athey; Christian Catalini; Alex Moehring; Catherine Tucker | MISQ 50(2): 801-816 | 卷期发表；加密场景 | MIT 比特币实验中的隐私选择与行为 |
+| P163 | 2026-07 | **[Perpetual Futures Pricing](https://doi.org/10.1111/mafi.70018)**<br>Damien Ackerer; Julien Hugonnier; Urban Jermann | Mathematical Finance 36(3): 481-499 | 卷期发表 | 线性、反向与 quanto 永续期货的无套利定价、资金费率和复制 |
 | P080 | 2026-07-27 | **[The Interplay of Opinions and Behavior in Social Trading: The Dynamics of Early Cryptocurrency Adoption](https://doi.org/10.1287/isre.2024.1300)**<br>Ye Liu; Mingwen Yang; Matthias Pelster; Yong Tan | ISR （未编入卷期） | 在线发表 | 社交交易中的意见、行为与早期加密货币采用 |
 | P081 | 2026-08-06 | **[Aggregate Confusion in Crypto Market Data](https://doi.org/10.1287/mnsc.2025.00611)**<br>Gustavo Schwenkler; Aakash Shah; Darren Yang | Management Science （未编入卷期） | 在线发表 | 加密市场数据提供商之间的数据质量差异 |
+| P164 | 2026-09 | **[Short Communication: Amortizing Perpetual Options](https://doi.org/10.1137/25M1828791)**<br>Zachary Feinstein | SIAM JFM 17(3): SC13-SC27 | 卷期发表 | 摊销型永续期权的合约设计与定价；DeFi 可交易性和 AMM 风险对冲 |
+| P165 | 接收日期未公开 | **[Blockchain Analysis of Bitcoin Market](https://personal.lse.ac.uk/makarov1/)**<br>Igor Makarov; Antoinette Schoar | AER  | 已接收 | 比特币链上活动、交易用途、挖矿集中度与持币结构；兼涉主题 3 |
 | P082 | 接收日期未公开 | **[Who Invests in Crypto? Revealed Types and Economic Drivers of Retail Investment](https://sites.google.com/site/srbaker/academic-work)**<br>Darren Aiello; Scott R. Baker; Tetyana Balyuk; Marco Di Maggio; Mark J. Johnson; Jason D. Kotter | RFS  | 已接收 | 家庭加密资产投资者类型与零售投资的经济驱动因素 |
 
 ## 6. 去中心化交易所、自动做市与流动性
@@ -200,6 +207,7 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | P099 | 2026-05-26 | **[Can Stablecoins Be Stable?](https://doi.org/10.1287/mnsc.2024.06992)**<br>Adrien d’Avernas; Vincent Maurin; Quentin Vandeweyer | Management Science （未编入卷期） | 在线发表 | 稳定币稳定性与设计条件 |
 | P100 | 2026-07 | **[Decentralized Prediction Markets and Sports Books](https://doi.org/10.1111/mafi.70017)**<br>Hamed Amini; Maxim Bichuch; Zachary Feinstein | Mathematical Finance 36(3): 465-480 | 卷期发表 | 基于自动做市的去中心化预测与体育博彩市场 |
 | P101 | 2026-09-03 | **[Stablecoin Runs and the Centralization of Arbitrage](https://doi.org/10.1093/rfs/hhag072)**<br>Yiming Ma; Yao Zeng; Anthony Lee Zhang | RFS （未编入卷期） | 在线发表 | 稳定币赎回、集中套利与挤兑 |
+| P166 | 2026-10 | **[Anatomy of a run: The Terra Luna crash](https://doi.org/10.1016/j.jfineco.2026.104359)**<br>Jiageng Liu; Igor Makarov; Antoinette Schoar | JFE 184: 104359 | 卷期发表 | Terra/Luna 与 UST 挤兑；链上透明度、投资者异质性与系统脆弱性 |
 | P102 | 2026-10-06 | **[Money Creation for Crypto Space: Stablecoins or Central Bank Digital Currencies?](https://doi.org/10.1287/mnsc.2024.08420)**<br>Jonathan Chiu; Cyril Monnet | Management Science （未编入卷期） | 在线发表 | 加密空间中的稳定币与央行数字货币供给 |
 
 ## 8. 智能合约、DAO、社区与制度治理
@@ -328,8 +336,13 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 |---|---|---|
 | P043 On the Profitability of Selfish Blockchain Mining Under Consideration of Ruin | Crossref 将作者姓名的 given/family 对调；按作者论文署名更正。 | [查看](https://pubsonline.informs.org/doi/10.1287/opre.2021.2169) |
 | P053 Trust at Scale: The Economic Limits of Cryptocurrencies and Blockchains | 以 QJE 正式卷期 140(1), February 2025 为准；首次在线 2024-10-16。 | [查看](https://doi.org/10.1093/qje/qjae033) |
+| P162 Short Communication: A Primer on Perpetuals | v2 补入。SIAM 原始页面列 cryptocurrency、decentralized finance 为关键词，确认属于加密永续衍生品文献。正式卷期 2023 年 14(1):SC17-SC30；首次在线 2023-03-30，接收 2022-12-21。摘要未出现 crypto，首轮遗漏。 | [查看](https://epubs.siam.org/doi/abs/10.1137/22M1520931) |
 | P079 The Digital Privacy Paradox and Choice Architecture: Evidence from an Experiment in Fintech | Crossref 尚未补齐卷期；MISQ 期刊页面及 AIS 正式目录确认 2026 年 50(2)。首次在线 2025-11-19。 | [查看](https://aisel.aisnet.org/misq/vol50/iss2/) |
+| P163 Perpetual Futures Pricing | v2 补入。出版社正文以比特币永续期货及加密交易所合约为主要应用。正式卷期 2026 年 36(3):481-499；首次在线 2025-11-20，不能把在线年份当成卷期年份。出版社于 2025-12-22 将首作者名字从 Damieb 更正为 Damien，采用更正后的署名。 | [查看](https://onlinelibrary.wiley.com/doi/10.1111/mafi.70018) |
+| P164 Short Communication: Amortizing Perpetual Options | v2 补入。SIAM 页面确认 2026 年 17(3):SC13-SC27，接收 2026-05-17，首次在线 2026-07-03。公开作者稿的引言及 4.2.2 节明确讨论 DeFi、链上可交易性与 AMM 对冲，按既有加密应用口径纳入。此为 Feinstein 单作者论文，不与 Bichuch、Feinstein 的 Designing On-Chain Options 工作论文合并。 | [查看](https://arxiv.org/html/2512.06505v3) |
+| P165 Blockchain Analysis of Bitcoin Market | v2 补入。作者 Igor Makarov 的 LSE 研究页在 Publications 下明确标注 American Economic Review, forthcoming。采用该页题名；NBER 旧稿题名为 Blockchain Analysis of the Bitcoin Market。AEA forthcoming 列表本次未找到对应条目，未核验到正式期刊 DOI、卷期、首次在线或接收日期；按作者公开接收声明收录，证据层级区别于出版方记录。NBER DOI 不能用作 AER 期刊 DOI。 | [查看](https://www.nber.org/papers/w29396) |
 | P082 Who Invests in Crypto? Revealed Types and Economic Drivers of Retail Investment | 作者 Scott R. Baker 研究页明确标注 Accepted, Review of Financial Studies；采用该页新题名。旧稿题名为 Who Invests in Crypto? Wealth, Financial Constraints, and Risk Attitudes。未将 2023 年工作论文日期或核验日期当成接收日期。 | [查看](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4281330) |
+| P166 Anatomy of a run: The Terra Luna crash | v2 补入。JFE 出版记录与作者研究页共同确认 2026 年 184:104359，卷期月份 2026-10。正文使用 Terra 链上数据研究 UST/LUNA 挤兑。题名未含 blockchain、crypto 或 stablecoin，且该条 Crossref 记录无摘要，首轮遗漏。首次在线日期未单独核实，留空。 | [查看](https://personal.lse.ac.uk/makarov1/) |
 | P128 Accounting for Cryptocurrencies | 正式卷期为 2026 年 64(1)，首次在线为 2025-09-15。 | [查看](https://doi.org/10.1111/1475-679x.70018) |
 | P149 Blockchain Adoption in a Supply Chain with Manufacturer Market Power | Crossref 仍只有 2023 年在线信息；期刊页面已列 70(9):6158-6178，按 2024 年卷期收录。 | [查看](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2022.02505) |
 
@@ -338,6 +351,8 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 - Leshno 与 Strack 的 *Bitcoin: An Axiomatic Approach and an Impossibility Theorem* 发表在 **AER: Insights**，不是 AER 主刊，因此不计入。[AEA 原始记录](https://www.aeaweb.org/articles?id=10.1257/aeri.20190494)。
 - *On the Programmability and Uniformity of Digital Currencies* 同样属于 AER: Insights，未计入 AER。
 - *Effects of Cryptocurrency Wealth on Household Consumption and Investment* 在作者研究页仍标为 JF 的 **Revise & Resubmit**，未列为已接收。[作者记录](https://sites.google.com/site/srbaker/academic-work)。
+- *Fundamentals of Perpetual Futures* 在作者公开记录仍为 RFS 返修状态，不计为已接收。[作者 CV](https://asafmanela.github.io/cv/cv-asaf-manela.pdf)。Shiller（1993）的永续期货研究为历史设计基础，未研究区块链或加密资产，未因 perpetual 关键词而收录。
+- Bichuch 与 Feinstein 的 *Designing On-Chain Options: Amortizing Perpetual Options* 是另一个工作论文，不是本目录收录的 Feinstein 单作者 SIAM 论文；未将二者合并或误认接收。[作者稿](https://arxiv.org/abs/2605.19146)。
 - *Automated Market Making and Loss-Versus-Rebalancing* 和 *Fragmentation and Optimal Liquidity Supply on Decentralized Exchanges* 未核验到指定期刊的公开接收证据，未因其广泛流传而自动纳入。
 - *The Power of Two in Token Systems*、*A Token-Based Central Queue with Order-Independent Service Rates* 等使用人工代币/排队令牌，不等于研究加密资产；本次未纳入。
 - AER 的 *Decentralized Exchange*、RFS 的 *Managing Mental Accounts*、Management Science 的 *In Art We Trust* 等为关键词误报，未纳入。

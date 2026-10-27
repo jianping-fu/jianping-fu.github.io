@@ -2,7 +2,7 @@
 
 公开网站：https://jianping-fu.github.io/
 
-区块链与加密资产研究文献库：覆盖指定 19 本期刊，收录 161 篇主目录文献与 7 篇边界相关文献，按 13 个研究主题组织。目录快照为 2026-10-27。
+区块链与加密资产研究文献库：覆盖指定 19 本期刊，收录 166 篇主目录文献与 7 篇边界相关文献，按 13 个研究主题组织。目录快照为 2026-10-27。
 
 ## 功能
 
@@ -11,6 +11,18 @@
 - 主题及时间排序、分页与题录详情
 - 研究图谱、期刊索引与浏览器本地收藏
 - 原始 Excel、BibTeX、Markdown 下载及当前筛选结果导出
+
+## v2 文献更新
+
+本次补入 5 篇，主目录为 166 篇（卷期发表 142 篇、在线发表 22 篇、已接收 2 篇），另有 7 篇边界文献，共 173 条题录。截止日仍为 2026-10-27。新增论文已插回对应主题，原有编号全部保留。
+
+- Short Communication: A Primer on Perpetuals
+- Perpetual Futures Pricing
+- Short Communication: Amortizing Perpetual Options
+- Blockchain Analysis of Bitcoin Market
+- Anatomy of a run: The Terra Luna crash
+
+详见 [目录补漏与修订记录](downloads/revisions.md)。两篇已接收论文的日期未公开，网站不将其归入任何年份。AER 新条目沿用作者公开 forthcoming 声明的证据层级。
 
 ## 发布与更新
 
