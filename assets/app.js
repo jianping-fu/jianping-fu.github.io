@@ -162,7 +162,7 @@
 
   function renderJournals() {
     const disciplines = [...new Set(Object.values(data.journals).map(j => j[2]))];
-    $('#journals-view').innerHTML = `<div class="content-title"><div><div class="section-label">THE JOURNAL INDEX</div><h2>${Object.keys(data.journals).length} 本期刊，${disciplines.length} 个学术视角</h2></div><a href="#view=about" class="button button-outline" data-nav="about">查看收录口径 ${icon('arrow')}</a></div><p class="view-intro">严格限定原目录指定的 ${Object.keys(data.journals).length} 本主刊。数量表示本轮核验收录情况；“本轮未检出”不代表该刊绝无相关研究。点击期刊，浏览对应题录。</p>${disciplines.map(d => `<section class="journal-group"><h3>${esc(d)}</h3><div class="journal-grid">${Object.entries(data.journals).filter(([,j]) => j[2] === d).map(([key,j]) => {
+    $('#journals-view').innerHTML = `<div class="content-title"><div><div class="section-label">THE JOURNAL INDEX</div><h2>${Object.keys(data.journals).length} 本期刊，${disciplines.length} 个学术视角</h2></div><a href="#view=about" class="button button-outline" data-nav="about">查看收录口径 ${icon('arrow')}</a></div><p class="view-intro">当前收录范围限定为 ${Object.keys(data.journals).length} 本主刊。数量表示本轮核验收录情况；“本轮未检出”不代表该刊绝无相关研究。点击期刊，浏览对应题录。</p>${disciplines.map(d => `<section class="journal-group"><h3>${esc(d)}</h3><div class="journal-grid">${Object.entries(data.journals).filter(([,j]) => j[2] === d).map(([key,j]) => {
       const n = records.filter(r => r.journal === key && r.main).length;
       const related = records.filter(r => r.journal === key && !r.main).length;
       const clickable = n + related > 0;
@@ -172,7 +172,7 @@
   }
 
   function renderAbout() {
-    $('#about-view').innerHTML = `<div class="content-title"><div><div class="section-label">SCOPE, SOURCES & METHODOLOGY</div><h2>每一条题录，都有来处</h2></div></div><p class="view-intro">本站将「梳理顶刊区块链论文」的原始交付整理为可检索的研究目录。内容是截至 ${readableCutoff()} 的固定快照，后续发表状态可能变化。</p><div class="about-grid"><div class="about-main">${data.method.map((text,i) => `<div class="method-item"><span class="method-number">${String(i+1).padStart(2,'0')}</span><p>${esc(text)}</p></div>`).join('')}<div class="provenance"><strong>网站整理说明</strong><p>论文标题、作者、期刊、日期、研究焦点、核验说明与来源链接均沿用原始目录。网站未对全部论文重新检索或进行全文审读；原始 Excel、阅读版及 BibTeX 可下载核对。</p><p>收藏保存在当前设备的浏览器中，不会跨设备同步。清除浏览器数据可能移除收藏，建议导出收藏题录备份。</p><p><a href="./downloads/catalogue.md" download>下载原始阅读版与逐篇核验说明 ↗</a></p><p><a href="./downloads/revisions.md" download>查看目录补漏与修订记录 ↗</a></p></div></div><aside class="panel about-aside"><h3>本次目录的边界</h3><p>${data.main_count} 篇主目录<br>${data.related_count} 篇边界相关文献，单独展示<br>${Object.keys(data.journals).length} 本指定期刊主刊</p><p>${Object.entries(data.status_counts).map(([label,n]) => `${esc(label)} ${n} 篇`).join('<br>')}</p><p>AER 与 AER: Insights 分别处理。仅有 R&R、工作论文或期刊模板，不视为期刊接收。</p><p>已接收条目的接收日期及证据层级，以各篇题录详情为准；日期未公开者不归入年份统计。</p><a href="./downloads/catalogue.xlsx" download class="button button-outline">完整 Excel ${icon('download')}</a><a href="./downloads/catalogue.bib" download class="button button-outline">完整 BibTeX ${icon('download')}</a></aside></div>`;
+    $('#about-view').innerHTML = `<div class="content-title"><div><div class="section-label">SCOPE, SOURCES & METHODOLOGY</div><h2>每一条题录，都有来处</h2></div></div><p class="view-intro">本站将「梳理顶刊区块链论文」的原始交付整理为可检索的研究目录。内容是截至 ${readableCutoff()} 的固定快照，后续发表状态可能变化。</p><div class="about-grid"><div class="about-main">${data.method.map((text,i) => `<div class="method-item"><span class="method-number">${String(i+1).padStart(2,'0')}</span><p>${esc(text)}</p></div>`).join('')}<div class="provenance"><strong>网站整理说明</strong><p>论文标题、作者、期刊、日期、研究焦点、核验说明与来源链接均沿用原始目录。网站未对全部论文重新检索或进行全文审读；下载的 Excel、阅读版与 BibTeX 均按当前期刊范围整理；历史核查报告采用当时口径。</p><p>收藏保存在当前设备的浏览器中，不会跨设备同步。清除浏览器数据可能移除收藏，建议导出收藏题录备份。</p><p><a href="./downloads/catalogue.md" download>下载当前阅读版与逐篇核验说明 ↗</a></p><p><a href="./downloads/revisions.md" download>查看目录补漏与修订记录 ↗</a></p></div></div><aside class="panel about-aside"><h3>本次目录的边界</h3><p>${data.main_count} 篇主目录<br>${data.related_count} 篇边界相关文献，单独展示<br>${Object.keys(data.journals).length} 本指定期刊主刊</p><p>${Object.entries(data.status_counts).map(([label,n]) => `${esc(label)} ${n} 篇`).join('<br>')}</p><p>AER 与 AER: Insights 分别处理。仅有 R&R、工作论文或期刊模板，不视为期刊接收。</p><p>已接收条目的接收日期及证据层级，以各篇题录详情为准；日期未公开者不归入年份统计。</p><a href="./downloads/catalogue.xlsx" download class="button button-outline">完整 Excel ${icon('download')}</a><a href="./downloads/catalogue.bib" download class="button button-outline">完整 BibTeX ${icon('download')}</a></aside></div>`;
   }
 
   function render() {
@@ -302,7 +302,7 @@
       $('#year-filter').innerHTML += [...new Set(records.map(r => r.year).filter(Boolean))].sort((a,b) => b-a).map(y => `<option value="${y}">${y} 年</option>`).join('')+'<option value="unknown">日期未公开</option>';
       state = readState(); render();
     } catch {
-      $('#paper-list').innerHTML = '<div class="empty-state"><h3>文献目录暂时未能载入</h3><p>请刷新页面重试，或下载原始目录继续阅读。</p><a class="button button-outline" href="./downloads/catalogue.md">下载阅读版目录</a></div>';
+      $('#paper-list').innerHTML = '<div class="empty-state"><h3>文献目录暂时未能载入</h3><p>请刷新页面重试，或下载当前目录继续阅读。</p><a class="button button-outline" href="./downloads/catalogue.md">下载阅读版目录</a></div>';
       $('#result-summary').textContent = '目录载入失败';
     }
   }

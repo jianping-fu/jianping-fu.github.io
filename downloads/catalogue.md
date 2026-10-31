@@ -1,26 +1,27 @@
 # 区块链与加密数字资产文献目录
 
-截至 **2026-10-27**，v4 用户表格对照修订版。覆盖指定 19 刊。主目录 **168 篇**，另列边界相关文献 **11 篇**。
+文献核验截止日：**2026-10-27**；收录范围更新日：**2026-10-31**。当前覆盖 **16 刊**，主目录 **159 条**，边界相关 **10 条**，共 **169 条题录**。
 
-主目录状态：卷期发表 144 篇、在线发表 22 篇、已接收 2 篇。
+主目录状态：卷期发表 137 条、在线发表 20 条、已接收 2 条。
 
-v2 补入主目录 P162–P166；v3 补入边界相关 R08–R10；v4 对照用户表格补入主目录 P167–P168 和边界相关 R11。原有编号保留，条目按各主题内时间顺序排列。最新逐行核查结果见《用户表格逐条核查记录_v4.md》。
+本版按用户要求移除三本会计学期刊的文献，其余编号与原始核验信息保留。历史报告采用当时的 19 刊范围；[本次范围调整说明](revisions-v5.md)。
 
 ## 收录和排序口径
 
-1. 核验截止日：2026-10-27。范围严格限定用户指定的 19 本期刊主刊，Information Systems Research 按正确刊名处理。
-2. 主目录包括以区块链、加密货币、代币化、ICO、NFT、智能合约、DeFi、稳定币等为对象的研究，以及明确以加密/NFT 市场为数据场景的研究。主目录保留 3 篇评论、1 篇专辑导论和 1 篇社论，并在相关性列标明类型。
-3. 11 篇一般理论或较宽泛综述单列为“边界相关”，不与主目录数量混计。
+1. 核验截止日：2026-10-27。当前收录范围为 16 本期刊主刊；2026-10-31 按用户要求移除三本会计学期刊，文献核验截止日保持不变。
+2. 主目录包括以区块链、加密货币、代币化、ICO、NFT、智能合约、DeFi、稳定币等为对象的研究，以及明确以加密/NFT 市场为数据场景的研究。当前保留 1 篇评论、1 篇专辑导论和 1 篇社论，并在相关性列标明类型。
+3. 10 篇一般理论或较宽泛综述单列为“边界相关”，不与主目录数量混计。
 4. 纯 CBDC、一般电子支付、一般密码学/安全多方计算、一般去中心化交易理论、非链上积分与排队代币，不因出现相同词语而自动收录。直接比较稳定币与 CBDC 的论文则纳入。
 5. 已编入卷期的论文按正式卷期年份及年月排序；尚未编入卷期的按期刊首次在线日期排序。同月按可得在线日期、题名排列。接收日期未公开的已接收论文放在所属主题末尾，不能据此判断其真实接收先后。
 6. 在线发表与已接收分别标注。SSRN/NBER/arXiv 工作论文、R&R、会议接收、受邀返修和期刊论文模板均不构成期刊接收证据。仅有作者声明的已接收记录明确注明证据层级。
-7. 筛查 Crossref 中这 19 刊 2008-01-01 至 2026-10-27 的 35,916 条出版题录（含非论文记录），以广义关键词筛选题名/可得摘要，再用期刊官网、在线目录、作者页和公开研究记录交叉补查。关键词包括 blockchain、bitcoin、crypto、cryptocurrency、token/tokenization/tokenomics、ICO、NFT/non-fungible、stablecoin、DeFi、smart contract、distributed ledger、proof of work/stake、automated market maker、DAO、Uniswap、Ethereum、airdrop、mining 和 consensus 等。
+7. 原始 19 刊目录曾筛查 Crossref 中的 19 刊 2008-01-01 至 2026-10-27 的 35,916 条出版题录（含非论文记录），以广义关键词筛选题名/可得摘要，再用期刊官网、在线目录、作者页和公开研究记录交叉补查。关键词包括 blockchain、bitcoin、crypto、cryptocurrency、token/tokenization/tokenomics、ICO、NFT/non-fungible、stablecoin、DeFi、smart contract、distributed ledger、proof of work/stake、automated market maker、DAO、Uniswap、Ethereum、airdrop、mining 和 consensus 等。
 8. v2 补漏复核增加 perpetual futures/options、funding rate、Terra/Luna、UST/Tether、链上项目名称等检索词，复筛缺少摘要或题名较泛的候选，并补查作者公开接收声明。另检查原始日期筛选范围之外的 55 条未来卷期/日期记录，防止漏掉已在线但编入未来卷期的论文；这不将未来论文自动纳入。补入 5 篇，保留首版编号；篇目仍按主题内从旧到新排列。
-9. v3 对 JME、REStud、JPE、JF、JFE 进行定向复核，复筛五刊 9,670 条既有题录并补查公开接收目录及近似题名。主目录未增加；补入 3 篇有明确加密货币或区块链应用的一般理论，单列为边界相关，原有编号保持不变。详见《五刊定向核查记录_v3.md》。
-10. v4 对照用户提供的 crypto_top_journals_papers.xlsx 逐行核查：167 条中 165 条属于原 19 刊，150 条此前已收录；确认遗漏 2 篇主目录（含 1 篇社论）及 1 篇边界相关。其余 12 条是既定范围排除的 CBDC／一般数字支付论文，另 2 条属于 AER: Insights。新增编号 P167–P168、R11；原有编号保留。详见《用户表格逐条核查记录_v4.md》。
+9. v3 对 JME、REStud、JPE、JF、JFE 进行定向复核，复筛五刊 9,670 条既有题录并补查公开接收目录及近似题名。主目录未增加；补入 3 篇有明确加密货币或区块链应用的一般理论，单列为边界相关，原有编号保持不变。详见历史核查报告 v3；其数量为当时口径。
+10. 历史核查：v4 对照用户提供的 crypto_top_journals_papers.xlsx 逐行核查：167 条中 165 条属于原 19 刊，150 条此前已收录；确认遗漏 2 篇主目录（含 1 篇社论）及 1 篇边界相关。其余 12 条是既定范围排除的 CBDC／一般数字支付论文，另 2 条属于 AER: Insights。新增编号 P167–P168、R11；原有编号保留。详见历史核查报告 v4；其 19 刊范围与数量不是当前网站口径。
 11. 题录、卷期和日期以出版方记录优先；Crossref 暂缺卷期而官网已有卷期的记录进行人工修正，并保留修正说明。DOI 中的年份不是发表年份。首次在线日期缺失即留空，不用 DOI 注册日期替代。
 12. 每篇只在一个主要主题出现。主题和中文研究焦点根据题名、摘要及可得公开内容归纳，用于定位研究问题，不代替对论文识别策略或结论的全文审读。
 13. 这是公开记录可核验范围内的目录，不保证覆盖尚未公开的接收通知或所有尚未入库的记录。“未检出”不等于断言该刊绝无相关研究。
+14. 本次移除 Journal of Accounting and Economics、Journal of Accounting Research、The Accounting Review 的全部题录（9 条主目录和 1 条边界相关）。其余文献编号及核验信息保留；本次仅调整范围，未重新检索后续出版记录。
 
 ## 期刊覆盖
 
@@ -42,13 +43,8 @@ v2 补入主目录 P162–P166；v3 补入边界相关 R08–R10；v4 对照用�
 | 管理科学 | Operations Research | Operations Research | 4 | 0 |
 | 信息系统 | Information Systems Research | ISR | 12 | 2 |
 | 信息系统 | MIS Quarterly | MISQ | 10 | 0 |
-| 会计学 | Journal of Accounting and Economics | JAE | 4 | 0 |
-| 会计学 | Journal of Accounting Research | JAR | 4 | 0 |
-| 会计学 | The Accounting Review | TAR | 1 | 1 |
 
-Econometrica 和 Finance and Stochastics 本次未检出符合主目录口径的可确认文献。AER 已补入 1 篇作者主页明确标为 forthcoming 的比特币链上分析论文，另有 1 篇一般智能合约理论文献列在边界相关部分。
-
-Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthcoming 列表](https://people.math.ethz.ch/~finasto/forthcoming/forthcoming.html)。
+Econometrica 和 Finance and Stochastics 本次未检出符合主目录口径的可确认文献；“未检出”不等于断言不存在。
 
 ## 主题导航
 
@@ -62,13 +58,13 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | 6. 去中心化交易所、自动做市与流动性 | 13 |
 | 7. 稳定币、DeFi 借贷与预测市场 | 8 |
 | 8. 智能合约、DAO、社区与制度治理 | 20 |
-| 9. 企业披露、财务会计与审计 | 11 |
-| 10. 市场操纵、非法活动、网络犯罪与税收 | 11 |
+| 9. 企业披露、财务会计与审计 | 5 |
+| 10. 市场操纵、非法活动、网络犯罪与税收 | 8 |
 | 11. 供应链、企业应用与金融包容 | 11 |
 | 12. NFT、艺术品与创作者经济 | 7 |
 | 13. 综述与研究议程 | 1 |
 
-下文英文题名链接到 DOI 或接收证据来源。作者保留完整署名。所有状态均以本次核验截止日为界。
+下文英文题名链接到 DOI 或接收证据来源。作者保留完整署名。所有发表状态均以文献核验截止日为界。
 
 ## 1. 货币竞争、加密资产估值与收益
 
@@ -242,16 +238,10 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | 编号 | 年份/日期 | 论文与作者 | 期刊及卷期页码 | 状态 | 研究焦点 |
 |---|---|---|---|---|---|
 | P121 | 2019-12 | **[Riding the Blockchain Mania: Public Firms’ Speculative 8-K Disclosures](https://doi.org/10.1287/mnsc.2019.3357)**<br>Stephanie F. Cheng; Gus De Franco; Haibo Jiang; Pengkai Lin | Management Science 65(12): 5901-5913 | 卷期发表 | 上市公司投机性区块链 8-K 披露 |
-| P122 | 2022-03 | **[The Role of Disclosure and Information Intermediaries in an Unregulated Capital Market: Evidence from Initial Coin Offerings](https://doi.org/10.1111/1475-679x.12404)**<br>Thomas Bourveau; Emmanuel T. De George; Atif Ellahie; Daniele Macciocchi | JAR 60(1): 129-167 | 卷期发表 | ICO 自愿披露与信息中介 |
 | P123 | 2023-11 | **[Conflicted Analysts and Initial Coin Offerings](https://doi.org/10.1287/mnsc.2021.02928)**<br>Andreas Barth; Valerie Laturnus; Sasan Mansouri; Alexander F. Wagner | Management Science 69(11): 6641-6666 | 卷期发表 | ICO 分析师利益冲突与评级 |
 | P124 | 2024-02 | **[The (Limited) Power of Blockchain Networks for Information Provision](https://doi.org/10.1287/mnsc.2023.4718)**<br>Benedikt Franke; Qi Gao Fritz; André Stenzel | Management Science 70(2): 971-990 | 卷期发表 | 企业区块链的信息提供能力与边界 |
-| P125 | 2025-05 | **[Using Blockchain, Non-Fungible Tokens, and Smart Contracts to Track and Report Greenhouse Gas Emissions](https://doi.org/10.2308/tar-2023-0222)**<br>J. Gregory Jenkins; Eric M. Negangard; Mark D. Sheldon | TAR 100(3): 277-305 | 卷期发表 | 区块链、NFT 与智能合约支持温室气体排放报告 |
 | P126 | 2025-05 | **[Distributed Ledgers and Secure Multiparty Computation for Financial Reporting and Auditing](https://doi.org/10.1287/mnsc.2023.02577)**<br>Sean Shun Cao; Lin William Cong; Baozhong Yang | Management Science 71(5): 3852-3872 | 卷期发表 | 分布式账本、安全多方计算与报告审计 |
-| P127 | 2025-06 | **[The Effect of Intangible Asset Classification on Professional Financial Statement Users’ Assessments](https://doi.org/10.1111/1475-679x.12604)**<br>Spencer B. Anderson; Kim I. Mendoza; Cassie Mongold | JAR 63(3): 1107-1143 | 卷期发表；加密场景 | 以加密资产分类为场景的财务报表使用者实验 |
-| P128 | 2026-03 | **[Accounting for Cryptocurrencies](https://doi.org/10.1111/1475-679x.70018)**<br>Chelsea M. Anderson; Vivian W. Fang; James R. Moon Jr.; Jonathan E. Shipman | JAR 64(1): 45-79 | 卷期发表 | 上市公司加密资产持有与会计处理 |
 | P129 | 2026-06 | **[The Role of Auditor Reputation in an Emerging Audit Marketplace: Evidence from Decentralized Finance (DeFi)](https://doi.org/10.1287/mnsc.2023.02245)**<br>W. Robert Knechel; Steven A. Maex; Hyun Jong Park | Management Science 72(6): 5083-5105 | 卷期发表 | DeFi 审计市场中的审计师声誉 |
-| P130 | 2026-07 | **[Auditing smart contracts](https://doi.org/10.1016/j.jacceco.2026.101911)**<br>Wayne Landsman; Evgeny Lyandres; Edward Maydew; Daniel Rabetti; Che Zhang | JAE （未编入卷期） | 在线发表 | DeFi 智能合约审计的决定因素与后果 |
-| P131 | 2026-07 | **[Discussion of “Auditing smart contracts”: Assurance in the world of decentralized finance](https://doi.org/10.1016/j.jacceco.2026.101925)**<br>Andreas Park | JAE （未编入卷期） | 在线发表；评论 | 对智能合约审计与 DeFi 鉴证的讨论 |
 
 ## 10. 市场操纵、非法活动、网络犯罪与税收
 
@@ -260,10 +250,7 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | P132 | 2018-05 | **[Price manipulation in the Bitcoin ecosystem](https://doi.org/10.1016/j.jmoneco.2017.12.004)**<br>Neil Gandal; JT Hamrick; Tyler Moore; Tali Oberman | JME 95: 86-96 | 卷期发表 | 比特币交易所价格操纵 |
 | P133 | 2019-05 | **[Sex, Drugs, and Bitcoin: How Much Illegal Activity Is Financed through Cryptocurrencies?](https://doi.org/10.1093/rfs/hhz015)**<br>Sean Foley; Jonathan R Karlsen; Tālis J Putniņš | RFS 32(5): 1798-1853 | 卷期发表 | 比特币非法活动的规模与资金流 |
 | P134 | 2020-08 | **[Is Bitcoin Really Untethered?](https://doi.org/10.1111/jofi.12903)**<br>John M. Griffin; Amin Shams | JF 75(4): 1913-1964 | 卷期发表 | Tether 交易与比特币价格操纵 |
-| P135 | 2022-05 | **[Coins for Bombs: The Predictive Ability of On‐Chain Transfers for Terrorist Attacks](https://doi.org/10.1111/1475-679x.12430)**<br>Dan Amiram; Bjørn N. Jørgensen; Daniel Rabetti | JAR 60(2): 427-466 | 卷期发表 | 链上资金转移与恐怖袭击的预测 |
-| P136 | 2023-11 | **[Comment on Cong et al., “Tax loss harvesting with cryptocurrencies”](https://doi.org/10.1016/j.jacceco.2023.101612)**<br>Reuven Avi-Yonah | JAE 76(2-3): 101612 | 卷期发表；评论 | 对加密资产税损收割研究的税务评论 |
 | P137 | 2023-11 | **[Crypto Wash Trading](https://doi.org/10.1287/mnsc.2021.02709)**<br>Lin William Cong; Xi Li; Ke Tang; Yang Yang | Management Science 69(11): 6427-6454 | 卷期发表 | 加密交易所虚假交易量与对刷 |
-| P138 | 2023-11 | **[Tax-loss harvesting with cryptocurrencies](https://doi.org/10.1016/j.jacceco.2023.101607)**<br>Lin William Cong; Wayne Landsman; Edward Maydew; Daniel Rabetti | JAE 76(2-3): 101607 | 卷期发表 | 加密资产税损收割与投资者交易 |
 | P139 | 2024-12 | **[Direct Evidence of Bitcoin Wash Trading](https://doi.org/10.1287/mnsc.2021.01448)**<br>Arash Aloosh; Jiasun Li | Management Science 70(12): 8875-8921 | 卷期发表 | 比特币对刷交易的直接证据 |
 | P140 | 2025-04 | **[An Anatomy of Crypto-Enabled Cybercrimes](https://doi.org/10.1287/mnsc.2023.03691)**<br>Will Cong; Campbell Harvey; Daniel Rabetti; Zong-Yu Wu | Management Science 71(4): 3622-3633 | 卷期发表 | 加密资产支持的网络犯罪及链上资金追踪 |
 | P141 | 2025-10 | **[Trading Volume Manipulation and Competition Among Centralized Crypto Exchanges](https://doi.org/10.1287/mnsc.2021.02903)**<br>Dan Amiram; Evgeny Lyandres; Daniel Rabetti | Management Science 71(10): 8604-8622 | 卷期发表 | 中心化加密交易所竞争与成交量操纵 |
@@ -303,9 +290,9 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 |---|---|---|---|---|---|
 | P161 | 2023-11 | **[Advances in Blockchain and Crypto Economics](https://doi.org/10.1287/mnsc.2023.intro.v69.n11)**<br>Bruno Biais; Agostino Capponi; Lin William Cong; Vishal Gaur; Kay Giesecke | Management Science 69(11): 6417-6426 | 卷期发表；综述导论 | 区块链与加密经济学专辑导论及研究议程 |
 
-## 边界相关文献（11 篇，单列）
+## 边界相关文献（10 条，单列）
 
-这些文献确实发表在指定期刊，但区块链可能只是一个应用或较宽综述的一部分，因此不计入上述主目录。
+这些文献属于一般理论或较宽综述，不计入主目录。
 
 ### 货币竞争、加密资产估值与收益
 
@@ -340,7 +327,6 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | 编号 | 年月 | 论文与作者 | 期刊 | 相关性说明 |
 |---|---|---|---|---|
 | R05 | 2021-03 | [FinTech as a Game Changer: Overview of Research Frontiers](https://doi.org/10.1287/isre.2021.0997)<br>Terrence Hendershott; Xiaoquan (Michael) Zhang; J. Leon Zhao; Zhiqiang (Eric) Zheng | ISR 32(1): 1-17 | FinTech 研究前沿导论，涵盖区块链与加密货币 |
-| R06 | 2025-11 | [Innovative Capital Markets Research and Accounting Practitioners](https://doi.org/10.2308/tar-2025-0273)<br>Carolyn M. Callahan | TAR 100(6): 419-430 | 面向实务的会计研究议程，其中包括加密和数字资产 |
 | R07 | 2025-11 | [“Information frictions in macroeconomics: The legacy of Robert E. Lucas, Jr.”](https://doi.org/10.1016/j.jmoneco.2025.103842)<br>Robert M. Townsend | JME 155: 103842 | 宏观信息摩擦综述，专门讨论分布式账本与可编程数字资产 |
 
 ## 状态与日期的人工核验
@@ -362,7 +348,6 @@ Finance and Stochastics 另核查了截至 2026-10-16 更新的[编辑部 forthc
 | R11 A Flexible Design for Funding Public Goods | v4 根据用户表格第 99 行补入边界相关。出版方确认 2019 年 65(11):5171-5187，首次在线 2019-07-02，接收 2019-02-26。公开作者稿第 5.2 节讨论区块链社区中的合谋问题，但主体为一般公共品二次融资机制，故单列相关理论；未仅因首作者与 Ethereum 的关系而计为加密资产原创研究。 | [查看](https://arxiv.org/html/1809.06421) |
 | P167 Time for a Decentralization Journey of Digital Infrastructures? Reflections on the 2023 Impact Award | v4 根据用户表格第 137 行确认遗漏。MISQ/AIS 正式目录确认 2024 年 48(4):ix-xiv，作者为 Ola Henfridsson 与 Bendik Bygstad；用户表与 Crossref 均漏列第二作者，按期刊正式署名补齐。作者公开上传稿明确讨论 Web3、区块链、智能合约、DAO 及 MakerDAO/DAI。此文为 Guest Editorial，单独标为社论，不当作原创实证或理论研究。 | [查看](https://aisel.aisnet.org/misq/vol48/iss4/5/) |
 | P168 Balancing Power in Decentralized Governance: Quadratic Voting and Information Aggregation | v4 根据用户表格第 103 行确认此前遗漏。出版方确认 72(6):4597-4609，正式卷期 2026-06，首次在线 2025-11-03，接收 2025-06-08。作者公开稿将 blockchain、dApps 列为关键词；属于去中心化治理的投票机制研究。原题名及摘要的通用表述未触发首轮关键词筛选。 | [查看](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4416748) |
-| P128 Accounting for Cryptocurrencies | 正式卷期为 2026 年 64(1)，首次在线为 2025-09-15。 | [查看](https://doi.org/10.1111/1475-679x.70018) |
 | P149 Blockchain Adoption in a Supply Chain with Manufacturer Market Power | Crossref 仍只有 2023 年在线信息；期刊页面已列 70(9):6158-6178，按 2024 年卷期收录。 | [查看](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2022.02505) |
 
 ## 常见误收录与本次排除
