@@ -1,27 +1,29 @@
 # 区块链与加密数字资产文献目录
 
-文献核验截止日：**2026-10-27**；收录范围更新日：**2026-10-31**。当前覆盖 **16 刊**，主目录 **159 条**，边界相关 **10 条**，共 **169 条题录**。
+文献核验截至 **2026-11-09**。当前覆盖 **16 刊**，主目录 **159 条**，边界相关 **10 条**，共 **169 条题录**。
 
-主目录状态：卷期发表 137 条、在线发表 20 条、已接收 2 条。
+主目录状态：卷期发表 138 条、在线发表 19 条、已接收 2 条。
 
-本版按用户要求移除三本会计学期刊的文献，其余编号与原始核验信息保留。历史报告采用当时的 19 刊范围；[本次范围调整说明](revisions-v5.md)。
+[11 月 9 日增量核对记录](revisions-v6.md) · [16 刊范围调整记录](revisions-v5.md)
 
 ## 收录和排序口径
 
-1. 核验截止日：2026-10-27。当前收录范围为 16 本期刊主刊；2026-10-31 按用户要求移除三本会计学期刊，文献核验截止日保持不变。
-2. 主目录包括以区块链、加密货币、代币化、ICO、NFT、智能合约、DeFi、稳定币等为对象的研究，以及明确以加密/NFT 市场为数据场景的研究。当前保留 1 篇评论、1 篇专辑导论和 1 篇社论，并在相关性列标明类型。
-3. 10 篇一般理论或较宽泛综述单列为“边界相关”，不与主目录数量混计。
-4. 纯 CBDC、一般电子支付、一般密码学/安全多方计算、一般去中心化交易理论、非链上积分与排队代币，不因出现相同词语而自动收录。直接比较稳定币与 CBDC 的论文则纳入。
-5. 已编入卷期的论文按正式卷期年份及年月排序；尚未编入卷期的按期刊首次在线日期排序。同月按可得在线日期、题名排列。接收日期未公开的已接收论文放在所属主题末尾，不能据此判断其真实接收先后。
-6. 在线发表与已接收分别标注。SSRN/NBER/arXiv 工作论文、R&R、会议接收、受邀返修和期刊论文模板均不构成期刊接收证据。仅有作者声明的已接收记录明确注明证据层级。
-7. 原始 19 刊目录曾筛查 Crossref 中的 19 刊 2008-01-01 至 2026-10-27 的 35,916 条出版题录（含非论文记录），以广义关键词筛选题名/可得摘要，再用期刊官网、在线目录、作者页和公开研究记录交叉补查。关键词包括 blockchain、bitcoin、crypto、cryptocurrency、token/tokenization/tokenomics、ICO、NFT/non-fungible、stablecoin、DeFi、smart contract、distributed ledger、proof of work/stake、automated market maker、DAO、Uniswap、Ethereum、airdrop、mining 和 consensus 等。
-8. v2 补漏复核增加 perpetual futures/options、funding rate、Terra/Luna、UST/Tether、链上项目名称等检索词，复筛缺少摘要或题名较泛的候选，并补查作者公开接收声明。另检查原始日期筛选范围之外的 55 条未来卷期/日期记录，防止漏掉已在线但编入未来卷期的论文；这不将未来论文自动纳入。补入 5 篇，保留首版编号；篇目仍按主题内从旧到新排列。
-9. v3 对 JME、REStud、JPE、JF、JFE 进行定向复核，复筛五刊 9,670 条既有题录并补查公开接收目录及近似题名。主目录未增加；补入 3 篇有明确加密货币或区块链应用的一般理论，单列为边界相关，原有编号保持不变。详见历史核查报告 v3；其数量为当时口径。
-10. 历史核查：v4 对照用户提供的 crypto_top_journals_papers.xlsx 逐行核查：167 条中 165 条属于原 19 刊，150 条此前已收录；确认遗漏 2 篇主目录（含 1 篇社论）及 1 篇边界相关。其余 12 条是既定范围排除的 CBDC／一般数字支付论文，另 2 条属于 AER: Insights。新增编号 P167–P168、R11；原有编号保留。详见历史核查报告 v4；其 19 刊范围与数量不是当前网站口径。
-11. 题录、卷期和日期以出版方记录优先；Crossref 暂缺卷期而官网已有卷期的记录进行人工修正，并保留修正说明。DOI 中的年份不是发表年份。首次在线日期缺失即留空，不用 DOI 注册日期替代。
-12. 每篇只在一个主要主题出现。主题和中文研究焦点根据题名、摘要及可得公开内容归纳，用于定位研究问题，不代替对论文识别策略或结论的全文审读。
-13. 这是公开记录可核验范围内的目录，不保证覆盖尚未公开的接收通知或所有尚未入库的记录。“未检出”不等于断言该刊绝无相关研究。
-14. 本次移除 Journal of Accounting and Economics、Journal of Accounting Research、The Accounting Review 的全部题录（9 条主目录和 1 条边界相关）。其余文献编号及核验信息保留；本次仅调整范围，未重新检索后续出版记录。
+1. 公开记录核验截至 2026-11-09。当前收录范围为 16 本期刊主刊。
+2. 2026-10-28 至 2026-11-09 的增量核对筛查了 163 条去重题录及可查的期刊待刊名单。公开记录中未查到新增首发或可核实的新接收。P076 已补入正式卷期。
+3. Journal of Monetary Economics、Journal of Financial Economics、Mathematical Finance 和 MIS Quarterly 的待刊清单未能逐条复核。接收判断限于公开可核实的记录。
+4. 主目录包括以区块链、加密货币、代币化、ICO、NFT、智能合约、DeFi、稳定币等为对象的研究，以及明确以加密/NFT 市场为数据场景的研究。当前保留 1 篇评论、1 篇专辑导论和 1 篇社论，并在相关性列标明类型。
+5. 10 篇一般理论或较宽泛综述单列为“边界相关”，不与主目录数量混计。
+6. 纯 CBDC、一般电子支付、一般密码学/安全多方计算、一般去中心化交易理论、非链上积分与排队代币，不因出现相同词语而自动收录。直接比较稳定币与 CBDC 的论文则纳入。
+7. 已编入卷期的论文按正式卷期年份及年月排序；尚未编入卷期的按期刊首次在线日期排序。同月按可得在线日期、题名排列。接收日期未公开的已接收论文放在所属主题末尾，不能据此判断其真实接收先后。
+8. 在线发表与已接收分别标注。SSRN/NBER/arXiv 工作论文、R&R、会议接收、受邀返修和期刊论文模板均不构成期刊接收证据。仅有作者声明的已接收记录明确注明证据层级。
+9. 原始 19 刊目录曾筛查 Crossref 中的 19 刊 2008-01-01 至 2026-10-27 的 35,916 条出版题录（含非论文记录），以广义关键词筛选题名/可得摘要，再用期刊官网、在线目录、作者页和公开研究记录交叉补查。关键词包括 blockchain、bitcoin、crypto、cryptocurrency、token/tokenization/tokenomics、ICO、NFT/non-fungible、stablecoin、DeFi、smart contract、distributed ledger、proof of work/stake、automated market maker、DAO、Uniswap、Ethereum、airdrop、mining 和 consensus 等。
+10. v2 补漏复核增加 perpetual futures/options、funding rate、Terra/Luna、UST/Tether、链上项目名称等检索词，复筛缺少摘要或题名较泛的候选，并补查作者公开接收声明。另检查原始日期筛选范围之外的 55 条未来卷期/日期记录，防止漏掉已在线但编入未来卷期的论文；这不将未来论文自动纳入。补入 5 篇，保留首版编号；篇目仍按主题内从旧到新排列。
+11. v3 对 JME、REStud、JPE、JF、JFE 进行定向复核，复筛五刊 9,670 条既有题录并补查公开接收目录及近似题名。主目录未增加；补入 3 篇有明确加密货币或区块链应用的一般理论，单列为边界相关，原有编号保持不变。详见历史核查报告 v3；其数量为当时口径。
+12. 历史核查：v4 对照用户提供的 crypto_top_journals_papers.xlsx 逐行核查：167 条中 165 条属于原 19 刊，150 条此前已收录；确认遗漏 2 篇主目录（含 1 篇社论）及 1 篇边界相关。其余 12 条是既定范围排除的 CBDC／一般数字支付论文，另 2 条属于 AER: Insights。新增编号 P167–P168、R11；原有编号保留。详见历史核查报告 v4；其 19 刊范围与数量不是当前网站口径。
+13. 题录、卷期和日期以出版方记录优先；Crossref 暂缺卷期而官网已有卷期的记录进行人工修正，并保留修正说明。DOI 中的年份不是发表年份。首次在线日期缺失即留空，不用 DOI 注册日期替代。
+14. 每篇只在一个主要主题出现。主题和中文研究焦点根据题名、摘要及可得公开内容归纳，用于定位研究问题，不代替对论文识别策略或结论的全文审读。
+15. 这是公开记录可核验范围内的目录，不保证覆盖尚未公开的接收通知或所有尚未入库的记录。“未检出”不等于断言该刊绝无相关研究。
+16. 2026-10-31 调整网站范围，移除 Journal of Accounting and Economics、Journal of Accounting Research 和 The Accounting Review 的 9 条主目录及 1 条边界文献。
 
 ## 期刊覆盖
 
@@ -166,7 +168,6 @@ Econometrica 和 Finance and Stochastics 本次未检出符合主目录口径的
 | P073 | 2024-09 | **[Are cryptos different? Evidence from retail trading](https://doi.org/10.1016/j.jfineco.2024.103897)**<br>Shimon Kogan; Igor Makarov; Marina Niessner; Antoinette Schoar | JFE 159: 103897 | 卷期发表 | 同一批散户在加密资产与传统资产中的交易行为 |
 | P074 | 2025-03 | **[Does Mining Fuel Bubbles? An Experimental Study on Cryptocurrency Markets](https://doi.org/10.1287/mnsc.2022.01238)**<br>Marco Lambrecht; Andis Sofianos; Yilong Xu | Management Science 71(3): 1865-1888 | 卷期发表 | 挖矿是否助长加密资产泡沫的实验研究 |
 | P075 | 2025-10 | **[Statistical Error Bounds for Weighted Mean and Median With Application to Robust Aggregation of Cryptocurrency Data](https://doi.org/10.1111/mafi.12461)**<br>Michaël Allouche; Mnacho Echenim; Emmanuel Gobet; Anne‐Claire Maurice | Mathematical Finance 35(4): 760-778 | 卷期发表 | 加密货币报价数据的稳健聚合与误差界 |
-| P076 | 2026-03-23 | **[On the Quality of Cryptocurrency Markets: Centralized vs. Decentralized Exchanges](https://doi.org/10.1287/mnsc.2024.07703)**<br>Andrea Barbon; Angelo Ranaldo | Management Science （未编入卷期） | 在线发表 | 中心化与去中心化加密交易所的市场质量比较 |
 | P077 | 2026-05 | **[Social Audience Size as a Reference Point: Evidence from a Field Experiment](https://doi.org/10.1287/mnsc.2022.03144)**<br>Xingchen Xu; Qili Wang; Yizhi Liu; Liangfei Qiu | Management Science 72(5): 4298-4318 | 卷期发表；加密场景 | 加密社交交易平台上的受众规模与交易行为 |
 | P078 | 2026-05-06 | **[Crypto Carry](https://doi.org/10.1287/mnsc.2024.05069)**<br>Maik Schmeling; Andreas Schrimpf; Karamfil Todorov | Management Science （未编入卷期） | 在线发表 | 加密货币期现基差与持有收益 |
 | P079 | 2026-06 | **[The Digital Privacy Paradox and Choice Architecture: Evidence from an Experiment in Fintech](https://doi.org/10.25300/MISQ/2025/19206)**<br>Susan Athey; Christian Catalini; Alex Moehring; Catherine Tucker | MISQ 50(2): 801-816 | 卷期发表；加密场景 | MIT 比特币实验中的隐私选择与行为 |
@@ -174,6 +175,7 @@ Econometrica 和 Finance and Stochastics 本次未检出符合主目录口径的
 | P080 | 2026-07-27 | **[The Interplay of Opinions and Behavior in Social Trading: The Dynamics of Early Cryptocurrency Adoption](https://doi.org/10.1287/isre.2024.1300)**<br>Ye Liu; Mingwen Yang; Matthias Pelster; Yong Tan | ISR （未编入卷期） | 在线发表 | 社交交易中的意见、行为与早期加密货币采用 |
 | P081 | 2026-08-06 | **[Aggregate Confusion in Crypto Market Data](https://doi.org/10.1287/mnsc.2025.00611)**<br>Gustavo Schwenkler; Aakash Shah; Darren Yang | Management Science （未编入卷期） | 在线发表 | 加密市场数据提供商之间的数据质量差异 |
 | P164 | 2026-09 | **[Short Communication: Amortizing Perpetual Options](https://doi.org/10.1137/25M1828791)**<br>Zachary Feinstein | SIAM JFM 17(3): SC13-SC27 | 卷期发表 | 摊销型永续期权的合约设计与定价；DeFi 可交易性和 AMM 风险对冲 |
+| P076 | 2026-11 | **[On the Quality of Cryptocurrency Markets: Centralized vs. Decentralized Exchanges](https://doi.org/10.1287/mnsc.2024.07703)**<br>Andrea Barbon; Angelo Ranaldo | Management Science 72(11): 9629-9653 | 卷期发表 | 中心化与去中心化加密交易所的市场质量比较 |
 | P165 | 接收日期未公开 | **[Blockchain Analysis of Bitcoin Market](https://personal.lse.ac.uk/makarov1/)**<br>Igor Makarov; Antoinette Schoar | AER  | 已接收 | 比特币链上活动、交易用途、挖矿集中度与持币结构；兼涉主题 3 |
 | P082 | 接收日期未公开 | **[Who Invests in Crypto? Revealed Types and Economic Drivers of Retail Investment](https://sites.google.com/site/srbaker/academic-work)**<br>Darren Aiello; Scott R. Baker; Tetyana Balyuk; Marco Di Maggio; Mark J. Johnson; Jason D. Kotter | RFS  | 已接收 | 家庭加密资产投资者类型与零售投资的经济驱动因素 |
 
@@ -342,6 +344,7 @@ Econometrica 和 Finance and Stochastics 本次未检出符合主目录口径的
 | P079 The Digital Privacy Paradox and Choice Architecture: Evidence from an Experiment in Fintech | Crossref 尚未补齐卷期；MISQ 期刊页面及 AIS 正式目录确认 2026 年 50(2)。首次在线 2025-11-19。 | [查看](https://aisel.aisnet.org/misq/vol50/iss2/) |
 | P163 Perpetual Futures Pricing | v2 补入。出版社正文以比特币永续期货及加密交易所合约为主要应用。正式卷期 2026 年 36(3):481-499；首次在线 2025-11-20，不能把在线年份当成卷期年份。出版社于 2025-12-22 将首作者名字从 Damieb 更正为 Damien，采用更正后的署名。 | [查看](https://onlinelibrary.wiley.com/doi/10.1111/mafi.70018) |
 | P164 Short Communication: Amortizing Perpetual Options | v2 补入。SIAM 页面确认 2026 年 17(3):SC13-SC27，接收 2026-05-17，首次在线 2026-07-03。公开作者稿的引言及 4.2.2 节明确讨论 DeFi、链上可交易性与 AMM 对冲，按既有加密应用口径纳入。此为 Feinstein 单作者论文，不与 Bichuch、Feinstein 的 Designing On-Chain Options 工作论文合并。 | [查看](https://arxiv.org/html/2512.06505v3) |
+| P076 On the Quality of Cryptocurrency Markets: Centralized vs. Decentralized Exchanges | 2026-11-09 复核。期刊页列明 2026-03-23 首次在线发表，2026 年 11 月编入 72(11)，9629–9653 页。 | [查看](https://pubsonline.informs.org/doi/10.1287/mnsc.2024.07703) |
 | P165 Blockchain Analysis of Bitcoin Market | v2 补入。作者 Igor Makarov 的 LSE 研究页在 Publications 下明确标注 American Economic Review, forthcoming。采用该页题名；NBER 旧稿题名为 Blockchain Analysis of the Bitcoin Market。AEA forthcoming 列表本次未找到对应条目，未核验到正式期刊 DOI、卷期、首次在线或接收日期；按作者公开接收声明收录，证据层级区别于出版方记录。NBER DOI 不能用作 AER 期刊 DOI。 | [查看](https://www.nber.org/papers/w29396) |
 | P082 Who Invests in Crypto? Revealed Types and Economic Drivers of Retail Investment | 作者 Scott R. Baker 研究页明确标注 Accepted, Review of Financial Studies；采用该页新题名。旧稿题名为 Who Invests in Crypto? Wealth, Financial Constraints, and Risk Attitudes。未将 2023 年工作论文日期或核验日期当成接收日期。 | [查看](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4281330) |
 | P166 Anatomy of a run: The Terra Luna crash | v2 补入。JFE 出版记录与作者研究页共同确认 2026 年 184:104359，卷期月份 2026-10。正文使用 Terra 链上数据研究 UST/LUNA 挤兑。题名未含 blockchain、crypto 或 stablecoin，且该条 Crossref 记录无摘要，首轮遗漏。首次在线日期未单独核实，留空。 | [查看](https://personal.lse.ac.uk/makarov1/) |
